@@ -1,0 +1,384 @@
+/*
+Theme Name: halfway-revized-2
+Theme URI: http://halfwaytoavalon.com
+Description: The official Wordpress site for the band
+Version: 3.33 (wp 3.0)
+Author: Tony Browm
+Author URI: http://anthonybrown.gitbub.com
+Tags: music site, naked, clean, basic
+*/
+
+@import "css/reset.css";
+
+
+
+
+/* ==|== primary styles =====================================================
+   Author: 
+   ========================================================================== */
+body {
+	background: transparent url(images/bg.jpg);
+  font-family: Arial, sans-serif;
+}
+div#wrap {
+  position: relative;
+  width: 86%;
+  padding: 0;
+  margin: 0;
+  margin: 0 auto;
+}
+
+
+header {
+	width: 100%;
+}
+
+h1#logo{
+  width: 298px;
+  height: 113px;
+  text-indent: -9999px;
+  background: url(images/logo.jpg)no-repeat;
+  margin: 20px 0 0;
+}
+
+/* ==|== navigation styles =====================================================
+   Author: 
+   ========================================================================== */
+
+   div#nav {
+    width: 65%;
+    float: right;
+    padding: 0;
+    margin: -77px 0 0 0;
+    background: transparent;
+    line-height: 1.4em;
+   }
+    div#nav ul, div#nav li {
+      list-style: none;
+    }
+      div#nav ul {
+        width: 100%;
+        margin: 0 0 0 50px;
+        background-color: aqua;
+      }
+      div#nav li {
+        float: left;
+        margin: 3% 4%;
+      }
+        div#nav li:last-child {
+          margin-right: 0;
+        }
+        div#nav a {
+          text-decoration: none;
+          color: #555;
+          text-transform:uppercase;
+        }
+          div#nav li.current_page_item a {
+            padding: 0  0 5px 0;
+            border-bottom: 3px solid #777;
+          }
+
+
+/* ==|== featured styles =====================================================
+   Author: 
+   ========================================================================== */
+div#featured_section {
+  position: relative;
+  width: 100%;
+  height: 381px;
+  /*background-color: rgba(0,0,0, .3);*/
+  margin: 70px auto;
+}
+  div#featured_section img {
+    max-width: 100%;
+  }
+
+
+/* ==|== sound-links styles =====================================================
+   Author: 
+   ========================================================================== */
+div#front_content {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto 70px;
+}
+
+#sound-tags {
+  float: left;
+  width: 100%;
+  background: url(images/sprite.png)no-repeat 90px 0px;
+  margin: 0 auto;
+  text-indent: -9999px;
+}
+
+div.front_col {
+  width: 30%;
+  float: left;
+  margin: 0 10px 30px;
+}
+  div.front_col h2 {
+    color: #555;
+  }
+div.front_col span a{
+  text-decoration: none;
+  color: #777;
+}
+
+h3#tagline {
+  margin: 0 0 70px 15%;
+}
+  #tagline span {
+    color:#708f9e;
+  }
+
+
+
+
+/* ==|== main styles =====================================================
+   Author: 
+   ========================================================================== */
+div.main {
+  width: 60%;
+  padding: 0;
+  margin: 0;
+}
+div#content {
+  width: 60%;
+  float: left;
+}
+
+#respond { 
+  clear: both;  
+  width: 80%;
+  padding: 0;
+  margin: 0;
+  float: left; 
+}
+
+
+/* ==|== sidebar styles =====================================================
+   Author: 
+   ========================================================================== */
+
+#sidebar {
+  position: absolute;
+  width: 33%;
+  top: 190px;
+  right: 0;
+  padding:0;
+  margin:0 0 170px 0;
+  float: right;
+  list-style: none;
+}
+
+
+#access a.hidden {display: none;}
+
+/* ==|== slideshow styles =====================================================
+   Author: 
+   ========================================================================== */
+
+
+#slides {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:100;
+}
+
+
+.slides_container {
+  width:975px;
+  overflow:hidden;
+  position:relative;
+  display:none;
+}
+
+.slides_container div.slide {
+  width:975px;
+  height:381px;
+  display:block;
+}
+
+
+/*
+  Next/prev buttons
+*/
+
+#slides .next,#slides .prev {
+  position:absolute;
+  top:107px;
+  left:-39px;
+  width:24px;
+  height:43px;
+  display:block;
+  z-index:101;
+}
+
+#slides .next {
+  left:975px;
+}
+
+/*
+  Pagination
+*/
+
+.pagination {
+  margin:26px auto 0;
+  width:100px;
+}
+
+.pagination li {
+  float:left;
+  margin:0 1px;
+  list-style:none;
+}
+
+.pagination li a {
+  display:block;
+  width:12px;
+  height:0;
+  padding-top:12px;
+  background-image:url(images/pagination.png);
+  background-position:0 0;
+  float:left;
+  overflow:hidden;
+}
+
+.pagination li.current a {
+  background-position:0 -12px;
+}
+
+/*
+  Caption
+*/
+
+.caption {
+  z-index:500;
+  position:absolute;
+  bottom:20px;
+  left:0;
+  height:60px;
+  padding:5px 20px 0 20px;
+  background:#000;
+  background:rgba(0,0,0,.5);
+  width:965px;
+  font-size:1.4em;
+  line-height:1.33;
+  color:#fff;
+  border-top:1px solid #000;
+  text-shadow:none;
+}
+
+
+
+
+
+
+
+
+
+/* ==|== footer styles =====================================================
+   Author: 
+   ========================================================================== */
+
+footer {
+ clear: both;
+  width: 100%;
+  height: 320px;
+  padding: 0 0 0 0;
+  /*margin: 170px 0 0 0;*/
+  background: #383838;
+  color: #ececec;
+  text-align: center;
+}
+
+div#footer-nav {
+  float: left;
+  margin: 30px 20px 30px 10px;
+}
+p.copy {
+  float: right;
+  margin: 50px 20px 30px 20px;
+}
+footer li {
+  display: inline-block;
+}
+  footer li.current_page_item a {
+    color: #708f9e;
+  }
+footer a {
+ /* clear: both;*/
+  text-decoration: none;
+  color: #ececec;
+
+}
+
+
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+
+}
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
